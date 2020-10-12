@@ -1,1 +1,0 @@
-Customer1|Customer1|user|123456|customer1@gmail.com|canada
