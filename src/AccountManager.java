@@ -21,9 +21,9 @@ public class AccountManager extends ReadWrite {
         if (accountType.equalsIgnoreCase("chequing")) {
             interestAmount = 0.2 * balance;
         } else if (accountType.equalsIgnoreCase("saving")) {
-            interestAmount = 1.15 * balance;
+            interestAmount = 0.5 * balance;
         } else if (accountType.equalsIgnoreCase("Money Market")) {
-            interestAmount = 1.5 * balance;
+            interestAmount = 0.75 * balance;
         }
         return interestAmount;
     }
@@ -170,7 +170,7 @@ public class AccountManager extends ReadWrite {
         try {
              trasanctionCount = transactionManager.getTransactions(senderUserData[1]);
         }
-        catch(Exception e){
+        catch(Exception ignored){
         }
         if (trasanctionCount > 6 && (senderUserData[1].equalsIgnoreCase("saving")
                 || senderUserData[1].equalsIgnoreCase("Money Market"))) {
@@ -190,7 +190,7 @@ public class AccountManager extends ReadWrite {
         String depositeData = transactionManager.deposit(recieverUserData[1], amount, balanceAmountOther);
         String[] receiverTransactionArray = depositeData.split("\\|");
         recieverUserData[2] = receiverTransactionArray[4];
-        String Value = String.join("|", receiverTransactionArray);
+        String Value = String.join("|", recieverUserData);
         writeFile(accountDir + userName + "_" + accountNumber + ".txt", Value);
         return Double.parseDouble(senderTransactionArray[4]);
     }
