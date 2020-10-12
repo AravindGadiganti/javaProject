@@ -8,6 +8,7 @@ public class Application {
      * Main method is to execute the methods according to functionality.
      */
     public static void main(String[] args) {
+        System.out.println("******** Welcome To Bank ********\n");
         Scanner in = new Scanner(System.in);
         login(in);
     }
