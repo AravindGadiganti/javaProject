@@ -75,7 +75,7 @@ public class Application {
      * Method is to perform opertions for the user selected options from the menu displayed
      *
      * @param in:user's input.
-     * @param user      :User's data
+     * @param user:User's data
      */
     public static void optionOperation(Scanner in, String user) {
         AccountManager accountManager = new AccountManager();

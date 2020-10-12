@@ -74,7 +74,7 @@ public class UserDetailsManagers extends ReadWrite {
     /**
      * Method is to allow user to change phone number and modify user data file.
      *
-     * @param in:user's    input
+     * @param in:user's input
      * @param value:user's data
      */
     public String changePhoneNumber(Scanner in, String value) {

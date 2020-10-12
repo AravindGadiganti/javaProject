@@ -32,7 +32,7 @@ public class AccountManager extends ReadWrite {
      * Method is to create account for an user and store the users data into file.
      *
      * @param in   : User input
-     * @param user : Username
+     * @param user : User's Username
      */
     public void createUserAccount(Scanner in, String user) {
         System.out.println("Enter Account type as checking or saving or MoneyMarket ");

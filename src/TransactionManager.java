@@ -41,7 +41,7 @@ public class TransactionManager extends ReadWrite {
      * Method is to withdraw money to users accountNumber and modify recode transaction in user file.
      *
      * @param accountNumber:User's accountNumber number
-     * @param amount:Amount        to be deposit
+     * @param amount:Amount to be deposit
      * @param beforeBalance:Amount before deposit
      */
     public String withdraw(String accountNumber, Double amount, Double beforeBalance) {

@@ -29,7 +29,7 @@ public class ReadWrite {
      * Method is tp write data from the given file.
      *
      * @param fileName:Path of the file
-     * @param data:Data     needs to write into file
+     * @param data:Data needs to write into file
      */
     public void writeFile(String fileName, String data) {
 
