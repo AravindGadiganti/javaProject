@@ -132,7 +132,7 @@ public class Application {
                     String[] usedData = newUser.split("\\|");
                     System.out.println("User " + usedData[0] + " is created");
                     if(usedData[2].equalsIgnoreCase("User")) {
-                        accountManager.createUserAccount(in, newUser);
+                        accountManager.createUserAccount(in, usedData[0]);
                         System.out.println("Account is created");
                     }
                     login(in);
