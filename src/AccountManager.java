@@ -35,10 +35,10 @@ public class AccountManager extends ReadWrite {
      * @param user : User's Username
      */
     public void createUserAccount(Scanner in, String user) {
-        System.out.println("Enter Account type as checking or saving or MoneyMarket ");
+        System.out.println("Enter Account type as Chequing or saving or MoneyMarket ");
         String accountType;
         accountType = in.next();
-        if (accountType.equals("checking")) {
+        if (accountType.equals("Chequing")) {
             System.out.println("Enter the Account number");
             int accountNumber = in.nextInt();
             System.out.println("Enter the Balance");
